@@ -21,6 +21,10 @@ h1 {
     margin: 5px;
 }
 
+.digit-container table {
+    border-collapse: collapse;
+}
+
 .digit-container table tr td {
     width: 32px;
     height: 32px;
