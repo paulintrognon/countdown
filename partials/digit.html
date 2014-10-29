@@ -1,0 +1,7 @@
+
+<table class="">
+  <tr ng-repeat="digitRow in digitDrawer.getTemplate(digit) track by $index">
+    <td ng-repeat="digitCol in digitRow track by $index" ng-class="{full: digitCol=='*'}">
+    </td>
+  </tr>
+</table>

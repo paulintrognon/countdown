@@ -1,0 +1,27 @@
+body {
+    background: url("bg.jpg") center;
+}
+
+.number-indicator {
+    display: inline-block;
+    width: 100px;
+    font-size: 100px;
+    color: deeppink;
+    line-height: 100px;
+    vertical-align: bottom;
+}
+
+.digit-container {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.digit-container table tr td {
+    width: 32px;
+    height: 32px;
+}
+
+.digit-container table tr td.full {
+    background: url("heart.png") #ebcccc;
+}

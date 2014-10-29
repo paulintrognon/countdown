@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="countdown">
+<head>
+  <meta charset="utf-8">
+  <title>Margot + Paulin = <3</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 class="text-center">CD</h1>
+</header>
+
+<div ng-controller="CountdownController as cd">
+
+  <!-- Digits Container -->
+  <div class="list-numbers text-center">
+
+    <!-- Hours -->
+    <div class="number">
+      <number info="hours"></number>
+      <p class="number-indicator">H</p>
+    </div>
+
+    <!-- Minutes -->
+    <div class="number">
+      <number info="minutes"></number>
+      <p class="number-indicator">M</p>
+    </div>
+
+    <!-- Seconds -->
+    <div class="number">
+      <number info="seconds"></number>
+      <p class="number-indicator">S</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
