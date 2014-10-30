@@ -12,7 +12,7 @@
 
         function updateTime() {
             var now = new Date();
-            var remainingTime = endTime - now;
+            var remainingTime = (endTime - now)/* + (now.getTimezoneOffset() * 60 * 1000)*/;
             $scope.hours = Math.floor(remainingTime / (60 * 60 * 1000));
             $scope.minutes = Math.floor((remainingTime / (60 * 1000)) - ($scope.hours * 60));
             $scope.seconds = Math.floor((remainingTime / (1000)) - ($scope.hours * 3600) - ($scope.minutes * 60));
